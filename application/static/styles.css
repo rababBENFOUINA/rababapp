@@ -1,0 +1,79 @@
+main{
+    width: 70%;
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: rgb(205, 65, 65);
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+    padding: 20px;
+  }
+  label, p{
+    margin-bottom: 5px;
+    color: #FFF5E1;
+  }
+  h1{
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    color: #FFF5E1;
+    
+  }
+  h3{
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    color: #FFF5E1;
+    
+  }
+
+  #description{
+    text-align: center;
+    color: #FFF5E1;
+  
+  }
+  body {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-attachment: fixed;
+    background-image: url(https://media.istockphoto.com/id/1390367114/vector/set-of-editable-vector-creative-geometric-abstract-elements-with-editable-stroke-weight.jpg?s=1024x1024&w=is&k=20&c=3kvIhtrQnU7uMxgo2LY0nSspO1NjGIxMUPBoFNmqQ8E=);
+    display:flex; 
+    flex-direction:column;
+    justify-content:center;
+    min-height:100vh;
+  
+  }
+  input, select{
+    width: 100%;
+    background-color: #333333;
+    border: 3px solid #333333;
+    color: #FFF5E1;
+    margin: 0 0 10px 0;
+    
+  }
+  form{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: right;
+  }
+  textarea {
+    resize: vertical;
+    width: 100%;
+    background-color: #FFF5E1
+  }
+  button[type="submit"] {
+    display: block;
+    width: 40%; /* Ajustez la largeur selon vos préférences */
+    margin: 5 auto;
+    border-radius: 10px; /* Valeur de bord arrondi */
+    background-color: #333333;
+    color: #FFF5E1;
+    padding: 6px; /* Ajout d'un peu d'espace intérieur pour le style */
+    font-size: 1.1rem;
+    cursor: pointer; /* Ajout du curseur pour indiquer que c'est un élément cliquable */
+  }

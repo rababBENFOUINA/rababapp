@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Book Rating Advisor</title>
+  </head>
+  <body>
+  <main>
+    <div>
+      <h1 id="title">Book Rating Advisor</h1>
+      <p id="description">It's your personal guide to select your next book to read</p>
+    </div>
+    <div id="form-contents">
+      <form action="/book_recommendation_form" id="book_recommendation_form" method="POST" >
+
+        <label for="publish_year">Year of Publication 
+          <input id="publish_year" name="publish_year" type="number" pattern="\d{4}" placeholder="YYYY" min="1200" max="2024" autocomplete="off" required/>
+        </label>
+
+        <label for="pages_no">Number of Pages
+          <input id="pages_no" name="pages_no" type="number" min="0" required />
+        </label>
+
+        <label for="category_encoded">category of the Book
+          <select id="category_encoded" name="category_encoded">
+              <option value="" disabled selected>Select Language</option>
+              <option value="1">Business Books</option>
+              <option value="14">Horror </option>
+              <option value="15"> Humor</option>
+              <option value="5"> Fantasy</option>
+              <option value="7"> Fiction</option>
+              <option value="8"> Food and Cookbooks </option>
+              <option value="11"> Graphic Novels and Comics </option>
+              <option value="12">  Historical</option>
+              <option value="13"> History and Biography</option>
+              <option value="16">Memoir and Autobiography </option>
+              <option value="17"> Middle Grade and Children's  </option>
+              <option value="18"> Mystery and Thriller</option>
+              <option value="19"> Nonfiction </option>
+              <option value="20"> Paranormal Fantasy</option>
+              <option value="23"> Romance </option>
+              <option value="24"> Science and Technology</option>
+              <option value="25"> Science Fiction</option>
+              <option value="30"> other</option>
+          </select>
+      </label>
+
+      <label for="ratings_count">Average Ratings:
+        <input id="ratings_count" name="ratings_count" type="text" min="0" max="5" step="any" autocomplete="off" required />
+      </label>
+    
+    
+    
+        
+    
+        <!-- Adding a submission button to submit the form -->
+        <button type="submit">Submit</button>
+    </form>
+    
+      </div>
+
+  </main>
+  </body>
